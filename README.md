@@ -39,3 +39,8 @@ git log 默认输出commit hash, author, date, message
 | %an | 作者名 | 
 | %ae | 作者邮箱 |
 | %ad | 日期 |
+
+## 创建删除远程分支
+1. `git checkout -b newBranch`, 先在本地创建新分支
+1. `git push origin newBranch:newBranch`, 在远程创建同名分支
+1. `git push origin --delete newBranch`, 删除远程分支
